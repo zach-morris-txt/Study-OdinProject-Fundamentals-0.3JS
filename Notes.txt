@@ -1,0 +1,60 @@
+[JAVASCRIPT]
+    Enter JS code into html file using <script> element
+        Internal    <script>*JS code*</script>
+        External    <script src="javascript.js"></script>
+    Node.js - environment for running javascript outside of the browser so that developers 
+    can write such things as server-side scripts
+
+    JS Variables - act as named storage containers
+        Variable var - the "old-school" version of variable let, they are interchangeable 
+            under most circumstances
+            *Good practice to avoid var for let unless situation demands it*
+
+        Variable let - newer variation of var with some minor differences
+            Ex. let message = 'Hello'
+
+            Variables var and let storage value can be reassigned:
+            Ex. let message = "Hello"       //variable declaration//
+                message = "hi"              //value changed//
+            *Bad practice to use variable before defining it though technically possible 
+                outside of strict mode. Will give error within Node.js strict mode*
+
+        Variable const - declares a constant value, can't be reassigned
+            *widespread practice to use constants as aliases for difficult-to-remember 
+                values that are known prior to execution. Such constants are named using 
+                capital letters and underscores*
+                Ex. const COLOR_RED = "#F00"        //hex value//
+
+        Variable naming rules
+            -name must contain only letters, digits, or the symbols $ and _
+            -first character must not be a digit
+            -cannot be a reserved name; name used by code like function, return, let, etc
+            *Good practice to use camelCase*
+
+
+[JAVASCRIPT NUMBERS, OPERATORS]
+    Allows for decimals, scientific notation, integers of up to 15 digits, decimals up
+        to 17 digits
+    JS will try to convert strings to numbers for subtraction, division, and multiplication
+    NaN - Not a Number
+    isNaN() - global function for checking if a value is a number
+    Modulo Remained (%) - returns remained after division
+    Strict Equality & Inequality (=== & !==) will check type and value
+    Equality & Inequality (== & !=) will try to convert type and compare
+
+    Standard "+" is used for addition as well as string concatenation
+    Unary Operator of "+" - when used as a Unary Operator on a non-number value, it will 
+        try to convert the value to a number.
+            Ex. alert( +true );     returns 1
+            Ex. alert( +false )     returns 0
+            Ex. alert( +"" );       returns 0
+    Number() Method - does the same as unary "+", will try to convert value to a number
+    Operator Precedence - priority execution of operators
+    Bitwise Operators - works at the level of binary representation
+        *WebDev use of bitwise operators usually stick to the AND(&) and OR(|) operators
+    Modify & Assign Operators - adjusts the value and reassigns new value to variable, 
+        available for all arithmetic and bitwise operations
+        Ex. n = 2
+            n += 5      returns 7 (2 +5 --> n = 7)
+    Increment & Decrement (++ & --) - increases/decreases variable value by 1; prefix 
+        variable to return incremented/decremented value
