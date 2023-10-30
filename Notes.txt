@@ -41,6 +41,7 @@
     Modulo Remained (%) - returns remained after division
     Strict Equality & Inequality (=== & !==) will check type and value
     Equality & Inequality (== & !=) will try to convert type and compare
+    Assignment (=) gives value
 
     Standard "+" is used for addition as well as string concatenation
     Unary Operator of "+" - when used as a Unary Operator on a non-number value, it will 
@@ -51,10 +52,50 @@
     Number() Method - does the same as unary "+", will try to convert value to a number
     Operator Precedence - priority execution of operators
     Bitwise Operators - works at the level of binary representation
-        *WebDev use of bitwise operators usually stick to the AND(&) and OR(|) operators
+        *WebDev use of bitwise operators usually stick to the AND(&&) and OR(||) operators
     Modify & Assign Operators - adjusts the value and reassigns new value to variable, 
         available for all arithmetic and bitwise operations
         Ex. n = 2
             n += 5      returns 7 (2 +5 --> n = 7)
     Increment & Decrement (++ & --) - increases/decreases variable value by 1; prefix 
         variable to return incremented/decremented value
+
+
+    String- data type, plain text
+
+    Method - bit of functionality built into the language (slice, split, replace, trim, 
+        toUpperCase, concat, etc)
+
+
+[CONDITIONALS]
+    If/Else/ElseIf Conditional - runs through logic until a valid truth or final fail of
+        "truthy" with escape logic
+        Ex. if (age >= 14 && age <= 90) {}
+
+    OR(||) will evaluate left to right until the first truthy value, short-circuiting at 
+        the truthy value 
+    AND(&&) will evaluate left to right until the first false, or end with the last value 
+        if all truthy 
+    *Bad practice to replace if statements with ANDs or ORs*
+    NOT(!) evaluates for boolean true or false
+        !! can process values as boolean true/false
+
+    Switch Statements - less cumbersome than if conditionals; takes single input and 
+        checks it against several options, runs the code when it finds a match or runs a 
+        default if without match
+        Ex. Pseudocode: switch (expression) {
+                case choice1:
+                    // run this code
+                    break;
+                case choice2:
+                    // run this code instead
+                    break;
+                default:
+                    // actually, just run this code
+                    break;
+                }
+    Ternary Operator - single conditional with two choices
+        Ex. Pseudocode: condition ? run this code : run this code instead
+        Ex. const greeting = isBirthday     //condition true or false//
+                ? "Happy birthday Mrs. Smith — we hope you have a great day!"
+                : "Good morning Mrs. Smith."; 
