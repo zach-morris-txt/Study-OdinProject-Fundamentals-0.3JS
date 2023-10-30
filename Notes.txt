@@ -61,10 +61,24 @@
         variable to return incremented/decremented value
 
 
-    String- data type, plain text
+[DATA TYPES]
+    Number -integer or floating-point
+    Bigint - integer numbers of arbitrary length
+    String - data type, plain text
+    Boolean - true/false
+    Null - unknown values
+    Undefined - unassigned values
+    Symbol - unique identifiers
+    Object - more complex data structures
 
+    All types are primitive except for the Object because they return single values whilst
+        objects return collections. 
     Method - bit of functionality built into the language (slice, split, replace, trim, 
         toUpperCase, concat, etc)
+    Method typeof() - will return type of value but fails on null (declares null as object)
+
+    Strings can be declared with single quotes, double quotes, or backticks. Strings using
+        backticks are technically template literals; they allow embedded JS
 
 
 [CONDITIONALS]
@@ -94,6 +108,7 @@
                     // actually, just run this code
                     break;
                 }
+                
     Ternary Operator - single conditional with two choices
         Ex. Pseudocode: condition ? run this code : run this code instead
         Ex. const greeting = isBirthday     //condition true or false//
