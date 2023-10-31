@@ -114,3 +114,13 @@
         Ex. const greeting = isBirthday     //condition true or false//
                 ? "Happy birthday Mrs. Smith — we hope you have a great day!"
                 : "Good morning Mrs. Smith."; 
+
+
+[DEVTOOLS]
+    Open DevTools (Windows Chrome)      ctrl + shift + i
+    Contains a variety of screen sizes for testing mobile responsive design 
+    Breakpoints allow pauses in code execution with provided insights into the relevant 
+        scoped variables at that moment. Thus, developers can walk through their code
+        line by line.
+        *Within Sources tab, file navigator, relevant file, specify a breakpoint at the 
+            appropriate time, use code stepping to investigate*
